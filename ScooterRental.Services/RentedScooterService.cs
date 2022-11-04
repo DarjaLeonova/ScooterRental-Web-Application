@@ -21,7 +21,6 @@ namespace ScooterRental.Services
             }
 
             var res = RentedScooterValidator.ScooterIsAlreadyRentedValidation(scooter);
-
             if (res != null && res.Errors.Count > 0)
             {
                 return res;
@@ -48,7 +47,6 @@ namespace ScooterRental.Services
                 return result;
             }
             var res = RentedScooterValidator.ScooterIsNotRentedValidation(scooter);
-
             if (res != null && res.Errors.Count > 0)
             {
                 return res;
